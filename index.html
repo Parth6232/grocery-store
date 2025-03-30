@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Store</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Grocery Store</h1>
+    </header>
+    
+    <div class="container">
+        <!-- Product List -->
+        <div class="product-list">
+            <h2>Available Products</h2>
+
+            <!-- Product 1: Apple -->
+            <div class="product-item">
+                <img src="images/apple.jpg" alt="Apple" class="product-image">
+                <span>Apple - $0.5</span>
+                <button onclick="addToCart('Apple', 0.5)">Add to Cart</button>
+            </div>
+
+            <!-- Product 2: Banana -->
+            <div class="product-item">
+                <img src="images/banana.jpg" alt="Banana" class="product-image">
+                <span>Banana - $0.3</span>
+                <button onclick="addToCart('Banana', 0.3)">Add to Cart</button>
+            </div>
+
+            <!-- Product 3: Carrot -->
+            <div class="product-item">
+                <img src="images/carrot.jpg" alt="Carrot" class="product-image">
+                <span>Carrot - $0.7</span>
+                <button onclick="addToCart('Carrot', 0.7)">Add to Cart</button>
+            </div>
+
+            <!-- Product 4: Milk -->
+            <div class="product-item">
+                <img src="images/milk.jpg" alt="Milk" class="product-image">
+                <span>Milk - $1.2</span>
+                <button onclick="addToCart('Milk', 1.2)">Add to Cart</button>
+            </div>
+
+            <!-- Product 5: Eggs -->
+            <div class="product-item">
+                <img src="images/eggs.jpg" alt="Eggs" class="product-image">
+                <span>Eggs - $1.5</span>
+                <button onclick="addToCart('Eggs', 1.5)">Add to Cart</button>
+            </div>
+
+            <!-- Product 6: Bread -->
+            <div class="product-item">
+                <img src="images/bread.jpg" alt="Bread" class="product-image">
+                <span>Bread - $1.0</span>
+                <button onclick="addToCart('Bread', 1.0)">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Cart -->
+        <div class="cart">
+            <h2>Your Cart</h2>
+            <div id="cart-items">
+                <!-- Cart items will appear here -->
+            </div>
+            <div class="total" id="total-cost">
+                Total: $0.00
+            </div>
+            <button class="clear-cart-btn" onclick="clearCart()">Clear Cart</button>
+        </div>
+    </div>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
